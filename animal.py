@@ -31,9 +31,8 @@ a1.evolutie(138)
 a1.evolutie2_viteza()
 
 class Tip_Animal(Animal):
-    def __init__(self, specie, cine, culoare):
-        #super().__init__(cine, putere_muscare)
-        self.cine = cine
+    def __init__(self,cine, grupe_animale, hranire, dimensiune, mediu_de_viata, putere_muscare, specie, culoare):
+        super().__init__(cine, grupe_animale, hranire, dimensiune, mediu_de_viata, putere_muscare)
         self.specie = specie
         self.culoare = culoare
 
@@ -43,7 +42,7 @@ class Tip_Animal(Animal):
     #def evolutie2_viteza(self):
         #print()
 
-a2 = Tip_Animal("Caimanii", "crocodilieni", "verde masliniu")
+a2 = Tip_Animal("Crocodilienii","reptile","carnivore","medii","salbatice", 200, "Caimanii", "verde masliniu")
 print(a2)
 #a2.evolutie2_viteza()
 
